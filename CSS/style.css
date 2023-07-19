@@ -1,0 +1,42 @@
+
+body {
+background-color: #FFCF24 ;
+}
+
+.container {
+display: grid; grid-template-columns: 2fr 2fr 2fr; grid-template-areas: 
+"navigation navigation navigation"
+"title title title"
+"information information information" ; margin-left: 50px ; margin-right: 50px
+}
+
+#navigation {grid-area: navigation;display: grid; grid-template-areas: 
+"page1 page2 page3";}
+
+    
+#information {grid-area: information; display: grid; grid-template-areas: 
+"strengths furturegoals stratagy"
+}
+
+
+#strengths {grid-area: strengths; background-color: #FFA924; grid-area: 3/ 1 /4/ 1; width: 250px;
+  padding: 25px;
+  margin: 20px;}
+
+#futuregoals {grid-area: futuregoals; background-color: #FFA924; grid-area: 3/ 2 /4/ 2;   width: 250px;
+  padding: 25px;
+  margin: 20px;}
+
+#stratagy {grid-area: stratagy; background-color: #FFA924 ; grid-area: 3/ 3 /4/ 3;   width: 250px;
+  padding: 25px;
+  margin: 20px;}
+
+#title {grid-area: title}
+
+.image {width:150px; height:100px;}
+
+.button{background-color: #FFA924;border-radius: 10px;cursor: pointer; max-width: 150px}
+
+.button:hover{background-color: #ffb542;border-radius: 10px;cursor: pointer;}
+
+h1 {font-size: 60px;}

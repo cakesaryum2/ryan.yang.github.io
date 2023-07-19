@@ -1,0 +1,30 @@
+body {
+background-color: #FFCF24;
+}
+
+.container {
+display: grid; grid-template-columns: 1fr 2fr 2fr; grid-template-areas: 
+"navigation navigation navigation"
+"selfimage name name"
+"aboutme aboutme aboutme" ; margin-left: 50px}
+
+#navigation {grid-area: navigation;display: grid; grid-template-areas: 
+"page1 page2 page3";}
+
+#sefimage {grid-area: selfimage; }
+
+#Name {grid-area: name ; width: 300px;
+  padding: 50px; margin: 20px;} 
+
+#aboutme {grid-area: aboutme; background-color: #FFA924; width: auto;
+  padding: 20px; margin: 1px; margin-right: 50px }
+
+.image {width:200px; height:200px; margin-top: 50px; border-radius: 50%;}
+
+h1 {font-size: 70px;}
+
+.button{background-color: #FFA924;border-radius: 10px;cursor: pointer;max-width: 150px}
+
+.button:hover{background-color: #ffb542;border-radius: 10px;cursor: pointer;}
+p {font-size: 20px}
+h2 {font-size: 30px}
